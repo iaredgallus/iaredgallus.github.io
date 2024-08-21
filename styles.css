@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Georgia';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    border: 1px solid lightgray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    /* border: 1px solid red; */
+    width: 800px;
+    max-width: 800px;
+}
+
+footer {
+    /* border: 1px solid rgb(240, 240, 240); */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration-thickness: 1px;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#banner {
+    /* border: 1px solid blue; */
+    height: calc(25vh - 80px);
+}
+
+#iaredgallus {
+    margin: 2rem 0 0 0;
+    color: lightgray;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#jaredhawn {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+#navbar, #contact {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+#navbar li, #contact li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
