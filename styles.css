@@ -164,7 +164,7 @@ footer {
 
 #contact {
     // border: 1px solid rgb(240,240,240);
-    width: 33%;
+    width: calc(800px / 3);
     height: 3rem;
     border-radius: 2rem;
     background-color: white; // rgb(160,217,239); // rgb(98,193,229);
@@ -250,8 +250,6 @@ footer {
     }
 
     #contact {
-        height: rem;
-        width: 66%;
     }
 
     #contact img {
