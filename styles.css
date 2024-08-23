@@ -10,24 +10,39 @@ body {
 
 header {
     width: 100%;
-    border: 1px solid rgb(200, 220, 240);
+    border-bottom: 1px solid rgb(207,236,247);
     height: 40px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
 }
 
 main {
-    /* border: 1px solid red; */
-    width: 80%;
+    //border: 1px solid red;
+    margin-bottom: 60px;
+    width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-    padding-bottom: 20px;
+    //border: 1px solid green;
+    align-items: center;
+    width: 95%;
+    padding: 0 0.75rem 2rem 0.75rem;
 }
 
 a {
     text-decoration-thickness: 1px;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 #navbar a {
@@ -35,55 +50,71 @@ a {
 }
 
 #banner {
-    // border: 1px solid blue;
-    height: calc(100vh - 100px);
+    //border: 1px solid blue;
+    height: calc(100vh - 40px);
+    width: 95%;
+    min-width: 600px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    padding-bottom: 0;
 }
 
-#container_id {
-    // border: 1px solid red;
-    height: 50%;
+@media screen and (max-width: 620px) {
+    #banner {
+        flex-direction: column;
+        justify-content: left;
+        min-width: 20rem;
+    }
+}
+
+#banner-id {
+    //border: 1px solid yellow;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#container_image {
-    // border: 1px solid orange;
+#banner-image {
+    //border: 1px solid orange;
     position: relative;
     text-align: right;
-    height: 50%;
-    z-index: 999;
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#container_image img {
-    height: 100%;
-}
-
-/*
-#container_image_overlay {
-    border: 1px solid rgb(200, 220, 240);
-    position: absolute;
-    top: 0;
-    left: 0;
+#banner-image img {
     width: 100%;
-    height: 100%;
-    // background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 1%, rgba(255,255,255,0) 99%, rgba(255, 255, 255, 1));
 }
-*/
+
+@media screen and (max-width: 620px) {
+    #banner-id {
+        margin-bottom: 2rem;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #banner-image {
+    }
+}
 
 #iaredgallus {
-    margin: 2rem 0 0 0;
-    color: rgb(200, 220, 240);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: rgb(28,150,197); // rgb(98,193,229); //rgb(160,217,239);
     font-size: 2.5rem;
     font-style: italic;
 }
 
 #jaredhawn {
     margin-top: 0;
-    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
 }
 
 #navbar, #contact, #quickview {
@@ -99,21 +130,27 @@ a {
 }
 
 #quickview li {
-    border: 1px solid rgb(200, 220, 240);
+    // border: 1px solid rgb(207,236,247);
+    background-color: rgb(160,217,239);
     list-style: none;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     // border-radius: 10px;
 }
 
 #quickview li:hover {
-    background-color: rgb(200, 220, 240);
+    background-color: rgb(207,236,247);
     transition: background-color 0.2s ease-in-out;
 }
 
 #logo {
     font-weight: bold;
     font-size: 1.25rem;
+    color: rgb(28,150,197);
+}
+
+#about {
+    background-color: rgb(207,236,247);
 }
 
 footer {
@@ -124,10 +161,23 @@ footer {
     display: flex;
     justify-content: center;
     height: 60px;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255, 1) 100%);
 }
 
 #contact {
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(200, 220, 240);
+    background-color: rgb(160,217,239); // rgb(98,193,229);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+#contact a {
+    color: black;
+}
+
+#contact a:hover {
+    color: rgb(28,150,197);
+    transition: color 0.2s ease-in-out;
 }
