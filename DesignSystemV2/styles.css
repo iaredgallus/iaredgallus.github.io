@@ -2,6 +2,33 @@
     box-sizing: border-box;
 }
 
+#logo {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 5; 
+    height: 2rem; 
+    width: 2rem; 
+    background-color: #D8BFD8; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    font-family: 'Cambria';
+}
+
+#logo:hover {
+    background-color: #FFE4E1;
+}
+
+#logo a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
 body {
     background-color: #ececec;
     margin: 0;
@@ -32,7 +59,7 @@ h1 {
 h2 {
     font-family: 'Georgia', serif;
     font-size: 24px;
-    //margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 p, ul li {
@@ -43,12 +70,10 @@ p, ul li {
 }
 
 section {
-    //border: 1px solid blue;
     margin: 60px auto;
 }
 
 .card {
-    //border: 1px solid yellow;
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -56,6 +81,10 @@ section {
     width: 300px;
     text-align: center;
     color: black;
+}
+
+#about p {
+    font-family: 'Georgia';
 }
 
 #colors #ivory {
@@ -118,7 +147,6 @@ section {
     border-radius: 0px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.5);
-    //border: 1px solid red;
     vertical-align: top;
 }
 

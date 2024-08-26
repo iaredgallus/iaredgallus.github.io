@@ -7,49 +7,65 @@
   <header>
     <nav>
       <ul id="navbar">
-        <li id="logo">ig</li>
+        <li id="logo">
+          <div id="logo-circle" class="background-darksteel">IG</div></li>
         <li><a href="#">Home</a></li>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Portfolio</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-hawn-442b25b1/">Resume</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="banner">
       <div id="banner-id">
-        <p id="iaredgallus">iaredgallus</p>
+        <p id="iaredgallus" class="steel">iaredgallus</p>
         <h1 id="jaredhawn">Jared Hawn</h1>
         <div id="quickview-desktop">
           <p>Analyst &#8226; Linguist &#8226; Programmer</p>
           <ul class="quickview">
-            <li>View Resume</li>
-            <li>View Portfolio</li>
+            <li><a href="https://www.linkedin.com/in/jared-hawn-442b25b1/" target="_blank">View Resume</a></li>
+            <li><a href="#portfolio">View Portfolio</a></li>
           </ul>
         </div>
       </div>
       <div id="banner-image">
-        <img src="./images/jaredhawn2023.jpg">
+        <img src="./images/jaredhawn2023.jpg" alt="Jared at Chicago Booth">
+        <div id="banner-image-overlay"></div>
       </div>
       <div id="quickview-mobile">
         <p>Analyst &#8226; Linguist &#8226; Programmer</p>
-        <ul class="quickview">
-          <li>View Resume</li>
-          <li>View Portfolio</li>
+        <ul class="quickview" class="color-2">
+          <li><a href="https://www.linkedin.com/in/jared-hawn-442b25b1/">View Resume</a></li>
+          <li><a href="#portfolio">View Portfolio</a></li>
         </ul>
       </div>
     </section>
+    <aside id="aside-photos">
+      <img src="./images/wisconsin.jpeg" alt="Jared on a frozen lake in Wisconsin">
+      <img src="./images/banff.jpeg" alt="Jared in Banff, Alberta">
+      <div id="photos-overlay"></div>
+    </aside>
     <section id="about">
       <h2>About Me</h2>
-      <p>Coming soon.</p>
+      <p>Hey there! My name is Jared Hawn. I'm a western Massachusetts native living in Chicago, where I work remotely as a system analyst centered on data and web design. 
+        My internet alias, <i>iaredgallus</i>, is my first and last name transposed into Latin.</p>
+        <p>My everyday interests include hiking, writing, ultimate frisbee, space, world building, language creation, urban design, and behavioral psychology.</p>
+        <p>I have an academic background in theology (B.S.), linguistics (M.A.), and computer science. On this site, you'll find my resume, a programming portfolio, 
+          and links to other creative projects.</p>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
+    <aside id="aside-chicago">
+      <img id="chicago" alt="the Chicago skyline from the mouth of the Chicago River" src="./images/chicago.jpeg">
+      <div id="chicago-overlay"></div>
+    </aside>
+    <section id="portfolio" class="background-verylightsteel">
+      <h2>Portfolio</h2>
+      <h3>Web Design</h3>
       <ul>
-        <li><a href="./DesignSystemV2/index.html">Website Style Guide</a> (CodeCademy project, inline-block)</li>
-        <li><a href="./TeaCozyV2/index.html">TeaCozy</a> (CodeCademy project, flexbox)</li>
-        <li><a href="./VallesWest/index.html">Valles West</a> (novel project, flexbox)</li>
-        <li><a href="./WorshipSolV2/index.html">Worship Sol</a> (novel project, flexbox)</li>
+        <li><a href="./DesignSystemV2/index.html">Sample Website Style Guide</a></li>
+        <!-- <li><a href="./TeaCozyV2/index.html">TeaCozy</a> (CodeCademy project, flexbox)</li> -->
+        <li><a href="./VallesWest/index.html">Valles West</a>: Luxury on Mars</li>
+        <li>Join the fun and <a href="./WorshipSolV2/index.html">Worship Sol</a>!</li>
       </ul>
     </section>
   </main>

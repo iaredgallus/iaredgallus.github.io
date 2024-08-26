@@ -1,8 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+}
+
+#nav-list #logo {
+    margin: 0.75rem;
+    margin-right: 2rem;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: white; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cambria';
+}
+
+#nav-list #logo:hover {
+    background-color: #c4533d;
+}
+
+#nav-list #logo a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
 }
 
 a {
@@ -25,7 +52,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    font-family: 'Cabin';
+    font-family: 'Roboto';
     color: white;
 }
 
@@ -85,7 +112,7 @@ nav {
 section {
     max-width: 1000px;
     width: 100%;
-    padding: 8rem 0 0 0;
+    padding: 12rem 0 0 0;
 }
 
 #mission {
@@ -93,7 +120,7 @@ section {
     padding: 0;
     height: 100vh;
     color: white;
-    background-image: url("./images/lobby.jpg");
+    background-image: url("./images/lobby2.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,7 +133,7 @@ section {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0,0) 80%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0,0,0,0) 80%);
 }
 
 .mission-card {
@@ -123,6 +150,7 @@ section {
 }
 
 #mission p {
+    font-family: 'Cabin';
     display: inline;
     width: 6rem;
     font-size: 1rem;
@@ -168,10 +196,10 @@ section {
 
 #banner {
     height: 50vh;
-    background-image: url("./images/room-open.jpeg");
+    background-image: url("./images/wonder.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 80%;
     padding: 0;
     margin: 8rem 0 0 0;
 }
@@ -232,7 +260,7 @@ section {
     justify-content: center;
     flex-flow: column;
     background-color: rgba(220, 140, 35, 0.4);
-    background: linear-gradient(to bottom, rgba(220, 140, 35, 0.3), rgba(220, 140, 35, 0));
+    background: linear-gradient(to bottom, rgba(220, 140, 35, 0.2), rgba(220, 140, 35, 0));
     margin-bottom: 8rem;
 }
 
@@ -349,6 +377,7 @@ footer {
 }
 
 .image-title {
+    padding-top: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
