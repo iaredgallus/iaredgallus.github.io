@@ -58,7 +58,7 @@ a:hover {
     color: #91b6d4;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, table {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
@@ -339,7 +339,85 @@ footer {
     background-color: #0e1b25;
 }
 
+/* ========== RESUME ========== */
 
+#resume-h1 {
+    color: white;
+    text-align: center;
+    background-color:#2b506e;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.resume-section {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.resume-section h2 {
+    padding: 0 0.5rem;
+    color: #2b506e;
+}
+
+.resume-table {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.resume-table td {
+    /* border: 1px solid #dae7f1; */
+    vertical-align: top;
+    margin: 0;
+    padding: 0.5rem 0.25rem;
+}
+
+#languages, #products {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+#languages li, #products li {
+    /* border: 1px solid #91b6d4; */
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#products li a {
+    color: #0e1b25;
+    text-decoration-color: #0e1b25;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contributions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contributions li {
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.contributions-head {
+    font-style: italic;
+    color:#2b506e;
+}
+
+.final-section {
+    padding-bottom: 8rem;
+}
+
+/* ========== MEDIA QUERY ========== */
 
 @media screen and (max-width: 640px) {
     header {
