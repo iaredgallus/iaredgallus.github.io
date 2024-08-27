@@ -1,18 +1,22 @@
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
     /* border: 1px solid blue; */
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: 'Cambria';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: left;
     color: #0e1b25;
+}
+
+table {
+    font-size: 1rem;
 }
 
 header {
@@ -28,8 +32,8 @@ header {
 }
 
 main {
-    /* border: 1px solid red; */
     /* margin-bottom: 4rem; */
+    margin: 1.5rem 0 7rem 0;
     width: 100%;
     max-width: 800px;
     min-width: 320px;
@@ -37,6 +41,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: left;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -64,13 +69,28 @@ p, table {
     padding-right: 0.75rem;
 }
 
+h1, h2, h3, p, table {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 h1 {
-    margin: 0;
     font-size: 2rem;
+    padding: 1.5rem 0;
+    color: white;
+    text-align: center;
+    background-color:#2b506e;
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2b506e;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #navbar li {
@@ -336,27 +356,11 @@ footer {
     background-color: #0e1b25;
 }
 
-/* ========== RESUME ========== */
-
-#resume-h1 {
-    color: white;
-    text-align: center;
-    background-color:#2b506e;
-    width: 100%;
-    padding: 1.5rem 0;
-}
-
 .resume-section {
     width: 100%;
     margin: 0;
     padding: 0;
     padding-bottom: 2rem;
-}
-
-h2 {
-    padding: 0 0.5rem;
-    color: #2b506e;
-    /* border: 1px solid #91b6d4; */
 }
 
 .resume-table {
@@ -383,8 +387,23 @@ h2 {
 #languages li, #products li {
     /* border: 1px solid #91b6d4; */
     margin: 0.25rem;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
+}
+
+#lang-js, #lang-html, #lang-css, #lang-liquid, #prod-slate {
+    background-color: #4785b8;
+    opacity: 0.9;
+}
+
+#lang-py, #lang-sql, #prod-salesforce, #prod-jira {
+    background-color: #91b6d4;
+    opacity: 0.9;
+}
+
+#lang-java, #lang-c {
+    background-color: #dae7f1;
+    opacity: 0.9;
 }
 
 #products li a {
@@ -420,8 +439,10 @@ h2 {
 }
 
 .final-section {
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
+
+/* ========== MEDIA QUERY: DESKTOP ========== */
 
 @media screen and (min-width: 640px) {
     .left {
@@ -433,15 +454,36 @@ h2 {
     }
 }
 
-/* ========== MEDIA QUERY ========== */
+/* ========== MEDIA QUERY: < 800px ========== */
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .final-section {
+        padding-bottom: 8rem;
+    }
+}
+
+/* ========== MEDIA QUERY: MOBILE ========== */
 
 @media screen and (max-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+
     header {
         height: 3rem;
     }
 
     footer {
         height: 6rem;
+    }
+
+    body, table {
+        font-size: 1rem;
     }
     
     /*
@@ -491,4 +533,18 @@ h2 {
         padding: 0.75rem;
     }
 
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        height: 6rem;
+    }
+    
+    #navbar {
+        flex-wrap: wrap;
+    }
 }
