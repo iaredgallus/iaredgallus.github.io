@@ -23,7 +23,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 100;
     background-color: white;
 }
 
@@ -39,13 +39,14 @@ main {
     justify-content: left;
 }
 
+/*
 section {
-    /* border: 1px solid green; */
     align-items: center;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
+*/
 
 a {
     text-decoration-style: dotted;
@@ -58,14 +59,9 @@ a:hover {
     color: #91b6d4;
 }
 
-h1, h2, h3, p, table {
+p, table {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-}
-
-h2 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
 }
 
 h3 {
@@ -346,18 +342,20 @@ footer {
     text-align: center;
     background-color:#2b506e;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .resume-section {
+    width: 100%;
     margin: 0;
     padding: 0;
     padding-bottom: 2rem;
 }
 
-.resume-section h2 {
+h2 {
     padding: 0 0.5rem;
     color: #2b506e;
+    /* border: 1px solid #91b6d4; */
 }
 
 .resume-table {
@@ -369,7 +367,7 @@ footer {
     /* border: 1px solid #dae7f1; */
     vertical-align: top;
     margin: 0;
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem;
 }
 
 #languages, #products {
@@ -384,7 +382,7 @@ footer {
 #languages li, #products li {
     /* border: 1px solid #91b6d4; */
     margin: 0.25rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem;
     border-radius: 0.5rem;
 }
 
