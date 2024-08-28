@@ -392,17 +392,17 @@ footer {
     border-radius: 0.5rem;
 }
 
-#lang-js, #lang-html, #lang-css, #lang-liquid, #prod-slate {
+.lang-js, .lang-html, .lang-css, .lang-liquid, .prod-slate {
     background-color: #4785b8;
     opacity: 0.9;
 }
 
-#lang-py, #lang-sql, #prod-salesforce, #prod-jira {
+.lang-py, .lang-sql, .prod-salesforce, .prod-jira {
     background-color: #91b6d4;
     opacity: 0.9;
 }
 
-#lang-java, #lang-c {
+.lang-java, .lang-c {
     background-color: #dae7f1;
     opacity: 0.9;
 }
