@@ -388,23 +388,28 @@ footer {
 #languages li, #products li {
     /* border: 1px solid #91b6d4; */
     margin: 0.25rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.125rem 0.25rem;
     border-radius: 0.5rem;
 }
 
 .lang-js, .lang-html, .lang-css, .lang-liquid, .prod-slate {
-    background-color: #4785b8;
+    background-color: #6c9dc6;
     opacity: 0.9;
 }
 
 .lang-py, .lang-sql, .prod-salesforce, .prod-jira {
-    background-color: #91b6d4;
+    background-color: #a3c2db;
     opacity: 0.9;
 }
 
 .lang-java, .lang-c {
     background-color: #dae7f1;
     opacity: 0.9;
+}
+
+.work-details-ul span {
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.5rem;
 }
 
 #products li a {
