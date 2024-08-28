@@ -412,11 +412,29 @@ footer {
     text-decoration-color: #0e1b25;
 }
 
-#experience .left {
-    color:#2b506e;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 1px;
+.arrow-td {
+    width: 0.5rem;
+    vertical-align: middle !important;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-left: 0.7rem solid #2b506e;
+    border-top: 0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-top: 0.7rem solid #91b6d4;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent; 
+}
+
+#experience td, #education td, #teaching td {
+    vertical-align: middle;
 }
 
 #experience-help {
@@ -427,6 +445,11 @@ footer {
 
 .work-details td {
     padding-left: 1.5rem;
+}
+
+.work-details-ul {
+    padding-left: 0.5rem;
+    line-height: 1.5;
 }
 
 .bold {
@@ -466,6 +489,10 @@ footer {
 @media screen and (min-width: 640px) {
     .left {
         width: 160px;
+    }
+
+    #experience .left {
+        width: 130px;
     }
 
     .middle {

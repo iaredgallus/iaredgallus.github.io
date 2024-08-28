@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../resume/styles.css">
-  <script src="scripts.js" async></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -49,7 +49,7 @@
             </tr>
         </table>
     </section>
-    <section class="resume-section">
+    <section id="education" class="resume-section">
         <h2>Education</h2>
         <table class="resume-table">
             <tr>
@@ -71,39 +71,87 @@
     </section>
     <section id="experience" class="resume-section">
         <h2>Experience</h2>
-        <p id="experience-help"><i>Click on a row to expand or collapse details.</i></p>
+        <!--<p id="experience-help"><i>Click on a row to expand or collapse details.</i></p>-->
         <table class="resume-table">
             <tr id="work-1" onclick="toggleVisibility('work-1-details')">
-                <td class="bold left">Analyst</td>
+                <td class="arrow-td"><div class="arrow-right"></div></td>
+                <td class="bold left"></div>Analyst</td>
                 <td class="middle">Present</td>
                 <td>Northeastern University</td>
             </tr>
             <tr id="work-1-details" class="work-details" style="display:none;">
-                <td colspan="3">Forthcoming.</td>
+                <td colspan="4">
+                    <ul class="work-details-ul">
+                        <li>Manage structure, flow, and automation within NU’s instances of Slate (database).</li>
+                        <li>Using Slate/SQL, build reports to assess progress and inform decision-making.</li>
+                        <li>Using HTML/CSS, refine web-hosted content to ensure responsive display of data.</li>
+                        <li>Using JavaScript, develop and maintain interactive forms and webpages.</li>
+                    </ul>
+                </td>
             </tr>
             <tr id="work-2" onclick="toggleVisibility('work-2-details')">
+                <td class="arrow-td"><div class="arrow-right"></div></td>
                 <td class="bold left">Analyst</td>
                 <td class="middle">2023</td>
                 <td>University of Chicago, Booth School of Business</td>
             </tr>
             <tr id="work-2-details" class="work-details" style="display:none;">
-                <td colspan="3">Forthcoming.</td>
+                <td colspan="4">
+                    <ul class="work-details-ul">
+                        <li>Monitored data collection, flow, and automation in Slate; optimized inefficiencies.</li>
+                        <li>Using HTML, Liquid, and JavaScript, developed and maintained dynamic forms and portals.</li>
+                        <li>Using Slate/SQL, built complex queries for reports, mailings, and portal views.</li>
+                        <li>Refined mailing templates (with HTML/CSS/Liquid) for proper cross-platform display.</li>
+                    </ul>                
+                </td>
             </tr>
             <tr id="work-3" onclick="toggleVisibility('work-3-details')">
-                <td class="bold left">Asst. Director of Academic Ops</td>
+                <td class="arrow-td"><div class="arrow-right"></div></td>
+                <td class="bold left">Assistant Director</td>
                 <td class="middle">2021</td>
                 <td>Northeastern University, College of Professional Studies</td>
             </tr>
             <tr id="work-3-details" class="work-details" style="display:none;">
-                <td colspan="3">Forthcoming.</td>
+                <td colspan="4">
+                    <ul class="work-details-ul">
+                        <li>Within Academic Operations, led data pulls and contextualized trends for leadership.</li>
+                        <li>Coordinated college-wide projects within and across departments.</li>
+                        <li>Provided coaching to program managers for sustained performance and professional growth.</li>
+                        <li>Managed personal portfolio of two undergraduate degree programs (see below).</li>
+                    </ul>
+                </td>
             </tr>
             <tr id="work-4" onclick="toggleVisibility('work-4-details')">
+                <td class="arrow-td"><div class="arrow-right"></div></td>
+                <td class="bold left">Program Manager</td>
+                <td class="middle">2019</td>
+                <td>Northeastern University, College of Professional Studies</td>
+            </tr>
+            <tr id="work-4-details" class="work-details" style="display:none;">
+                <td colspan="4">
+                    <ul class="work-details-ul">
+                        <li>Maintained functional mastery of operational databases: Salesforce, Canvas, Banner.</li>
+                        <li>Built course schedules for multiple degree programs.</li>
+                        <li>Generated course and faculty reports to inform hiring, advising, and program change.</li>
+                        <li>Processed 70+ lecturer contracts per semester; ensured compliance with CBA.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="work-5" onclick="toggleVisibility('work-5-details')">
+                <td class="arrow-td"><div class="arrow-right"></div></td>
                 <td class="bold left">Admissions Supervisor</td>
                 <td class="middle">2014</td>
                 <td>Clarks Summit University</td>
             </tr>
-            <tr id="work-4-details" class="work-details" style="display:none;">
-                <td colspan="3">Forthcoming.</td>
+            <tr id="work-5-details" class="work-details" style="display:none;">
+                <td colspan="4">
+                    <ul class="work-details-ul">
+                        <li>Generated weekly, multi-faceted admission reports for the Vice President.</li>
+                        <li>Refined and implemented student recruitment strategies.</li>
+                        <li>Interviewed, hired and directed 7+ counselors and support staff.</li>
+                        <li>Managed workflow of clerical and data entry tasks.</li>
+                    </ul>
+                </td>
             </tr>
         </table>
     </section>
@@ -154,7 +202,7 @@
             </tr>
         </table>
     </section>
-    <section class="resume-section">
+    <section id="teaching" class="resume-section">
         <h2>Teaching & Coaching</h2>
         <table class="resume-table">
             <tr>
