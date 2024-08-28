@@ -366,6 +366,7 @@ footer {
 .resume-table {
     width: 100%;
     padding: 0 1rem;
+    border-spacing: 0;
 }
 
 .resume-table td {
@@ -409,6 +410,23 @@ footer {
 #products li a {
     color: #0e1b25;
     text-decoration-color: #0e1b25;
+}
+
+#experience .left {
+    color:#2b506e;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+#experience-help {
+    padding-left: 1.5rem;
+    color: #2b506e;
+    opacity: 0.8;
+}
+
+.work-details td {
+    padding-left: 1.5rem;
 }
 
 .bold {

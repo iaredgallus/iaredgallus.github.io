@@ -2,6 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../resume/styles.css">
+  <script src="scripts.js" async></script>
 </head>
 <body>
   <header>
@@ -68,28 +69,41 @@
             </tr>
         </table>
     </section>
-    <section class="resume-section">
+    <section id="experience" class="resume-section">
         <h2>Experience</h2>
+        <p id="experience-help"><i>Click on a row to expand or collapse details.</i></p>
         <table class="resume-table">
-            <tr>
+            <tr id="work-1" onclick="toggleVisibility('work-1-details')">
                 <td class="bold left">Analyst</td>
                 <td class="middle">Present</td>
                 <td>Northeastern University</td>
             </tr>
-            <tr>
+            <tr id="work-1-details" class="work-details" style="display:none;">
+                <td colspan="3">Forthcoming.</td>
+            </tr>
+            <tr id="work-2" onclick="toggleVisibility('work-2-details')">
                 <td class="bold left">Analyst</td>
                 <td class="middle">2023</td>
                 <td>University of Chicago, Booth School of Business</td>
             </tr>
-            <tr>
+            <tr id="work-2-details" class="work-details" style="display:none;">
+                <td colspan="3">Forthcoming.</td>
+            </tr>
+            <tr id="work-3" onclick="toggleVisibility('work-3-details')">
                 <td class="bold left">Asst. Director of Academic Ops</td>
                 <td class="middle">2021</td>
                 <td>Northeastern University, College of Professional Studies</td>
             </tr>
-            <tr>
+            <tr id="work-3-details" class="work-details" style="display:none;">
+                <td colspan="3">Forthcoming.</td>
+            </tr>
+            <tr id="work-4" onclick="toggleVisibility('work-4-details')">
                 <td class="bold left">Admissions Supervisor</td>
                 <td class="middle">2014</td>
                 <td>Clarks Summit University</td>
+            </tr>
+            <tr id="work-4-details" class="work-details" style="display:none;">
+                <td colspan="3">Forthcoming.</td>
             </tr>
         </table>
     </section>
