@@ -428,6 +428,7 @@ footer {
     border-left: 0.7rem solid #2b506e;
     border-top: 0.4rem solid transparent;
     border-bottom: 0.4rem solid transparent;
+    padding-right: 0.3rem;
 }
 
 .arrow-down {
@@ -438,7 +439,7 @@ footer {
     border-right: 0.4rem solid transparent; 
 }
 
-#experience td, #education td, #teaching td {
+#experience td, #education td, #teaching td, #writing td {
     vertical-align: middle;
 }
 
@@ -448,12 +449,8 @@ footer {
     opacity: 0.8;
 }
 
-.work-details td {
-    padding-left: 1.5rem;
-}
-
 .work-details-ul {
-    padding-left: 0.5rem;
+    padding-left: 1.5rem;
     line-height: 1.5;
 }
 
@@ -461,28 +458,16 @@ footer {
     font-weight: bold;
 }
 
-.contributions {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.contributions-ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    line-height: 1.5;
 }
 
-.contributions li {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    background-color:#dae7f1;
-    opacity: 0.8;
-    /* border-radius: 0.5rem; */
-}
-
-.contributions-head {
+.contributions td p {
     font-style: italic;
-    color:#2b506e;
-}
-
-.contributions-td {
-    padding: 0 !important;
-    background-color: #dae7f1;
+    padding: 0;
+    margin: 0;
 }
 
 .final-section {
@@ -496,7 +481,7 @@ footer {
         width: 160px;
     }
 
-    #experience .left {
+    #experience .left, #writing .left {
         width: 130px;
     }
 
