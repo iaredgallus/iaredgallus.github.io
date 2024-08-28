@@ -443,6 +443,7 @@ footer {
     margin: 0.5rem 0;
     padding: 0.5rem;
     background-color:#dae7f1;
+    opacity: 0.8;
     /* border-radius: 0.5rem; */
 }
 
