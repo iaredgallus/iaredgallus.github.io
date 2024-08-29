@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./nalo.css" rel="stylesheet">
+        <script src="nalo.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <ul id="navbar">
+                <li id="logo"><div id="logo-circle" class="background-darksteel">IG</div></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../resume/resume.html">Resume</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Nalo Generator</h1>
+            <section>
+                <h2>Generator</h2>
+                <p id="help-text">Click 'Generate' to render a new sentence in Nalo.</p>
+                <button onclick="getSentence()">Generate</button>
+                <p id="sentence-box"></p>
+            </section>
+            <section>
+                <h2>Purpose</h2>
+                <p>
+                    This tool generates random sentences in Nalo that are both grammatically correct and true to nature.
+                    Sentences are built <a href="#program-details">using only Nalo from beginning to end</a> rather 
+                    than translating from English to Nalo, so English translations are currently unavailable. 
+                    Short of learning basic Nalo, you'll have to take on faith that the generator is 
+                    working as prescribed.
+                </p>
+                <p>
+                    Though not immediately useful to visitors, this tool proves useful <i>to me</i> 
+                    for enhancing my own Nalo comprehension. It generates sentences that I wouldn't have crafted
+                    on my own, and since I have few real-life interlocutors, I appreciate the fresh content.
+                    Beyond this, the fleshing out of Nalo dovetails nicely with future fiction-writing aspirations. 
+                </p>
+                <p>
+                    Most practically, this tool exemplifies a functional, complex JavaScript program that 
+                    has been integrated seemlessly with a webpage. 
+                    Even if you don't <i>nalo</i> right now, you'll notice (hopefully!) that each sentence is novel 
+                    and that the user experience is clean.
+                </p>
+            </section>
+            <section>
+                <h2>About Nalo</h2>
+                <p>Nalo is a constructed language that I started building in 2023. <i>Nalo</i> translates to "inclination of the tongue." 
+                Here are some fast facts:</p>
+                <ul>
+                    <li>Nalo uses the most common sounds across all human languages:<br /> 
+                        <i>vowels</i> (aeiou), <i>consonants</i> (mnptkfsx<sup class="small">1</sup>lr<sup class="small">2</sup>wy).</li>
+                    <li>Some core words are formed via onomatopeoia. For example, <i>la</i> (water) 
+                    mimics dripping water, while <i>sa</i> (fire) imitates the hiss of a campfire.
+                    </li>
+                    <li>
+                    Other core words are formed by mapping pairs of natural phenomena onto arbitrary pairs of syllables. For example, <i>toward</i> and <i>from</i> are opposite ideas, so they are represented by syllables 
+                    articulated at opposite ends of the mouth (<i>ka</i> and <i>pa</i> respectively).</li>
+                    <li>Complex words are formed by compounding or metaphorizing core words. For example, 
+                        <i>nalo</i> (language) is a compound of <i>na</i> (desire) and <i>lo</i> (tongue).
+                    </li>
+                    <li>Grammar is largely regular. Core grammatical words include <i>o</i> to mark subject, 
+                        <i>a</i> to mark location, and <i>ka</i>/<i>pa</i> to mark movement.</li>
+                </ul>
+                <sup>1 pronounced "ch" or "sh", interchangeably<br />
+                2 trilled or tapped, interchangeably</sup>
+            </section>
+            <section id="program-details" class="final-section">
+                <h2>Program Details</h2>
+                <p>As mentioned above, this tool generates random sentences in Nalo that are 
+                    both grammatically correct and semantically logical. In the sentences generated,
+                    something without eyes will never "see," and subjects without agency will never use the active voice.
+                </p>
+                <p> 
+                    To accomplish this, verbs are grouped semantically via JavaScript Objects, 
+                    and these Objects determine which actors and recipients are appropriate for each verb. 
+                </p>
+            </section>
+        </main>
+        <footer>
+            <ul id="contact">
+              <li><a href="https://www.linkedin.com/in/jared-hawn-442b25b1/" target="_blank"><img src="../images/linkedin.png"></a></li>
+              <li><a href="https://www.instagram.com/iaredgallus/" target="_blank"><img src="../images/instagram.png"></a></li>
+              <li><a href="mailto:jareddhawn@gmail.com" target="_blank"><img src="../images/gmail.png"></a></li>
+            </ul>
+          </footer>
+    </body>
+</html>
