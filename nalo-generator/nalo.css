@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    line-height: 1.5;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +12,6 @@ body {
     flex-flow: column;
     align-items: center;
     color:#0e1b25;
-    line-height: 1.25rem;
 }
 
 /* ========== HEADER STYLES ========== */
@@ -119,6 +119,15 @@ button:active {
 
 .small {
     font-size: 0.5rem;
+}
+
+.extra-space {
+    letter-spacing: 1px;
+}
+
+.code-p {
+    padding: 0.5rem;
+    background-color: #dae7f1;
 }
 
 #help-text {

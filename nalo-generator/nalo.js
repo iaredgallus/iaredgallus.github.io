@@ -402,6 +402,7 @@ let themeActionLand = {
     goals: [wordObjectNatureLand, wordObjectNatureWater,
         wordTool, wordAnimalLand, wordAnimalSky, wordAnimalWater]
 }
+
 let themeActionSky = {
     name: 'themeActionSky',
     root: [actions],

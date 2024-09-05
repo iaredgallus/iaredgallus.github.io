@@ -27,56 +27,74 @@
             <section>
                 <h2>Purpose</h2>
                 <p>
-                    This tool generates random sentences in Nalo that are both grammatically correct and true to nature.
-                    Sentences are built <a href="#program-details">using only Nalo from beginning to end</a> rather 
-                    than translating from English to Nalo, so English translations are currently unavailable. 
-                    Short of learning basic Nalo, you'll have to take on faith that the generator is 
+                    This tool generates random sentences in <a href="#about-nalo">Nalo</a> that are grammatically correct and semantically logical 
+                    (i.e. "not nonsense"). Sentences are built using Nalo from the ground up, so English translations are 
+                    currently unavailable. Short of learning Nalo, you'll have to take on faith that the generator is 
                     working as prescribed.
                 </p>
                 <p>
-                    Though not immediately useful to visitors, this tool proves useful <i>to me</i> 
-                    for enhancing my own Nalo comprehension. It generates sentences that I wouldn't have crafted
-                    on my own, and since I have few real-life interlocutors, I appreciate the fresh content.
-                    Beyond this, the fleshing out of Nalo dovetails nicely with future fiction-writing aspirations. 
+                    Though not immediately useful to visitors, this tool is useful
+                    for enhancing my own Nalo comprehension: it generates sentences that I wouldn't have crafted
+                    on my own, and since I have few real-life interlocutors, all fresh content is helpful.
+                    Moreover, the fleshing out of a constructed language dovetails nicely with future fiction-writing aspirations. 
                 </p>
                 <p>
-                    Most practically, this tool exemplifies a functional, complex JavaScript program that 
-                    has been integrated seemlessly with a webpage. 
-                    Even if you don't <i>nalo</i> right now, you'll notice (hopefully!) that each sentence is novel 
+                    Most practically, this tool exemplifies a functional JavaScript program that 
+                    has been integrated with a webpage. Even if you don't understand the sentences, you'll notice (hopefully!) that each sentence is novel 
                     and that the user experience is clean.
                 </p>
             </section>
             <section>
-                <h2>About Nalo</h2>
-                <p>Nalo is a constructed language that I started building in 2023. <i>Nalo</i> translates to "inclination of the tongue." 
+                <h2 id="about-nalo">About Nalo</h2>
+                <p>Nalo is a constructed language that I started building in 2023. <i>Nalo</i> simply means "words."
                 Here are some fast facts:</p>
                 <ul>
                     <li>Nalo uses the most common sounds across all human languages:<br /> 
-                        <i>vowels</i> (aeiou), <i>consonants</i> (mnptkfsx<sup class="small">1</sup>lr<sup class="small">2</sup>wy).</li>
-                    <li>Some core words are formed via onomatopeoia. For example, <i>la</i> (water) 
+                        <i>vowels</i> (<span class="extra-space">aeiou</span>), <i>consonants</i> (<span class="extra-space">mnptkfsx<sup class="small">1</sup>lr<sup class="small">2</sup>wy</span>).</li>
+                    <li>Many core words are formed via onomatopeoia. For example, <i>la</i> (water) 
                     mimics dripping water, while <i>sa</i> (fire) imitates the hiss of a campfire.
                     </li>
                     <li>
                     Other core words are formed by mapping pairs of natural phenomena onto arbitrary pairs of syllables. For example, <i>toward</i> and <i>from</i> are opposite ideas, so they are represented by syllables 
                     articulated at opposite ends of the mouth (<i>ka</i> and <i>pa</i> respectively).</li>
                     <li>Complex words are formed by compounding or metaphorizing core words. For example, 
-                        <i>nalo</i> (language) is a compound of <i>na</i> (desire) and <i>lo</i> (tongue).
+                        <i>nalo</i> (words) is a compound of <i>na</i> (desire) and <i>lo</i> (tongue).
                     </li>
                     <li>Grammar is largely regular. Core grammatical words include <i>o</i> to mark subject, 
-                        <i>a</i> to mark location, and <i>ka</i>/<i>pa</i> to mark movement.</li>
+                        <i>a</i> to mark location, and <i>ka</i>/<i>pa</i> to mark movement.<br />
+                    </li>
                 </ul>
                 <sup>1 pronounced "ch" or "sh", interchangeably<br />
                 2 trilled or tapped, interchangeably</sup>
             </section>
             <section id="program-details" class="final-section">
                 <h2>Program Details</h2>
-                <p>As mentioned above, this tool generates random sentences in Nalo that are 
-                    both grammatically correct and semantically logical. In the sentences generated,
-                    something without eyes will never "see," and subjects without agency will never use the active voice.
+                <p>As mentioned above, this tool generates semantically logical sentences. 
+                    Ergo, something without eyes will never "see," 
+                    and subjects without agency will not use the active voice.
                 </p>
-                <p> 
-                    To accomplish this, verbs are grouped semantically via JavaScript Objects, 
-                    and these Objects determine which actors and recipients are appropriate for each verb. 
+                <p>
+                    To accomplish this, all Nalo words are grouped by meaning into arrays, 
+                    and these arrays live inside JavaScript Objects.
+                    Each Object oversees a specific class of verbs (the root)
+                    and determines which actors (sources) and recipients (goals) 
+                    are logically appropriate for its verbs.
+                </p>
+                <p class="code-p">
+                    <code>
+                    let ActionLand = {<br />
+                        &nbsp;&nbsp;root: [verbsLand],<br />
+                        &nbsp;&nbsp;sources: [wordPronounAll, wordAnimalLand],<br />
+                        &nbsp;&nbsp;goals: [wordObjectNatureLand, wordObjectNatureWater,<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;wordTool, wordAnimalLand, wordAnimalSky, wordAnimalWater]<br />
+                    }</code>
+                </p>
+                <p>
+                    When run, the program selects an Object at random.
+                    It asks the Object for a verb, an actor, and a recipient.
+                    Depending on the class of verb, the program may also ask for additional sentence parts 
+                    (adjectives, adverbs, etc.). 
+                    If allowed, the Object returns valid options for these as well.
                 </p>
             </section>
         </main>
