@@ -51,18 +51,19 @@ nav a {
     align-items: center;
     margin-top: 70px;
     height: 700px;
-    width: 1200px;
+    max-width: 1200px;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1jq6dvs*_ga*NTk5NDI0NDU3LjE2OTIxNDExNTc.*_ga_3LRZM6TM9L*MTcwMTcwMDE3My4zNy4xLjE3MDE3MDAxNzYuNTcuMC4w);
+    background-position: center;
 }
 
 #mission_text {
-    width: 1200px;
+    width: 100%;
     text-align: center;
     background-color: black;
 }
 
 #featured {
-    width: 1000px;
+    max-width: 1000px;
     text-align: center;
     padding: 70px 0;
 }
@@ -88,9 +89,11 @@ nav a {
 #locations {
     padding-top: 80px;
     text-align: center;
-    height: 500px;
-    width: 1200px;
+    min-height: 500px;
+    max-width: 1200px;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1byw07m*_ga*NTk5NDI0NDU3LjE2OTIxNDExNTc.*_ga_3LRZM6TM9L*MTcwMTcwMDE3My4zNy4xLjE3MDE3MDAxNzYuNTcuMC4w);
+    background-position: center;
+    background-size: cover;
 }
 
 #locations h2 {
@@ -100,6 +103,8 @@ nav a {
 #location_box {
     display: flex;
     justify-content: center;
+    flex-flow: wrap;
+    align-content: space-around;
 }
 
 .location_card {
@@ -108,8 +113,8 @@ nav a {
     align-items: space-between;
     line-height: 2.5;
     padding: 10px;
-    width: 300px;
-    margin: 0 20px;
+    min-width: 300px;
+    margin: 20px 20px;
     background-color: black;
     opacity: 1;
 }
@@ -133,4 +138,5 @@ footer {
 #copyright {
     float: left;
     margin: 20px;
+    font-size: 0.5em;
 }
