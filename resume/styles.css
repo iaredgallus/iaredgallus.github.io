@@ -407,6 +407,21 @@ footer {
     opacity: 0.9;
 }
 
+.work-tr, .writing-tr {
+    transition: background-color 0.3s ease-in;
+}
+
+.work-details, .contributions {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.visible {
+    display: table-row;
+    opacity: 1;
+}
+
 .work-details-ul span {
     padding: 0.125rem 0.25rem;
     border-radius: 0.5rem;
